@@ -1,0 +1,106 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffccdc;
+    color: #d10068;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #d10068;
+}
+
+.photo {
+    width: 300px; /* Ajusta el tamaño de la foto */
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.gif {
+    width: 250px; /* Ajusta el tamaño del GIF */
+    display: block;
+    margin: 20px auto;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#btnYes, #btnNo {
+    display: none;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#btnYes {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+#btnNo {
+    background-color: #FF0000; /* Rojo */
+    color: white;
+}
+
+#btnYes:hover {
+    background-color: #45a049;
+}
+
+#btnNo:hover {
+    background-color: #cc0000;
+}
+
+/* Estilos para las fotos en formato cuadrado, un poco más grandes */
+#heartContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 10px; /* Espacio pequeño entre las fotos */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.heart-photo {
+    width: 100px; /* Fotos más grandes */
+    height: 100px; /* Ajustamos la altura también */
+    object-fit: cover; /* Para que las fotos no se deformen */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 0 auto; /* Asegura que las fotos estén centradas */
+}
+
+/* Mensaje debajo de las fotos */
+.final-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d10068;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* GIF final */
+.final-gif {
+    width: 250px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
