@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💘 ¡Feliz San Valentín Gorda! 💘</h1>
+        <p class="description">
+            Te amo demasiado y siempre te amaré. Para siempre sabes que eres muy importante en mi vida y quería hacerte esta sorpresa. Dale al botón de abajo. 💖
+        </p>
+        <button id="btnSurprise">🎁 Sorpresa</button>
+
+        <!-- Contenido oculto al inicio -->
+        <div id="surpriseMessage" style="display: none;">
+            <img src="images/foto.jpg.png" alt="Nuestra foto especial" class="photo">
+            <p>Mira gordita, esta es nuestra primera foto en Navidad, jajaja el primer día fueron de los nervios antes de encontrarnos. 💖</p>
+
+            <!-- Nuevo botón oculto al inicio -->
+            <button id="btnNext" style="display: none;">💖 Dale al siguiente, bebé 💖</button>
+        </div>
+
+        <!-- GIF oculto al inicio -->
+        <div id="gifContainer" style="display: none;">
+            <img src="images/sorpresa.gif.gif" alt="Sorpresa GIF" class="gif">
+            
+            <!-- Texto con pregunta -->
+            <p class="question">Escoge bien, sino te pego. ¿Me amas? 😡💖</p>
+
+            <!-- Botones de respuesta -->
+            <button id="btnYes" style="display: none;">😍 SÍ</button>
+            <button id="btnNo" style="display: none;">❌ NO</button>
+        </div>
+    </div>
+
+    <!-- Nuevo mensaje cuando se presiona "NO" -->
+    <div id="noMessage" style="display: none; text-align: center;">
+        <h1 class="big-text">YA NO QUIERO NADA, ADIÓS</h1>
+        <p class="big-emoji">🖕</p>
+    </div>
+
+        <!-- Contenedor de las fotos en forma de corazón (oculto al principio) -->
+        <div id="heartContainer" style="display: none;">
+            <!-- Aquí van las fotos -->
+            <div class="heart-shape">
+                <img src="images/foto1.jpg.png" class="heart-photo">
+                <img src="images/foto2.jpg.png" class="heart-photo">
+                <img src="images/foto3.jpg.png" class="heart-photo">
+                <img src="images/foto4.jpg.png" class="heart-photo">
+                <img src="images/foto5.jpg.png" class="heart-photo">
+                <img src="images/foto6.jpg.png" class="heart-photo">
+                <img src="images/foto7.jpg.png" class="heart-photo">
+                <img src="images/foto8.jpg.png" class="heart-photo">
+                <img src="images/foto9.jpg.png" class="heart-photo">
+                <img src="images/foto10.jpg.png" class="heart-photo">
+                <img src="images/foto11.jpg.png" class="heart-photo">
+                <img src="images/foto12.jpg.png" class="heart-photo">
+                <img src="images/foto13.jpg.png" class="heart-photo">
+                <img src="images/foto14.jpg.png" class="heart-photo">
+
+                <!-- Mensaje debajo de las fotos -->
+            <p class="final-message">
+                Mi vida, estos son las fotos que tenemos juntos, bueno la mayoría, aún quedan muchas más. 
+                Este es un regalo especial para ti, para que veas que siempre tengo algún que otro pequeño detalle 
+                aunque no haya podido mandar flores. ¿Me aceptarías estas? 💖
+            </p>
+
+             <!-- GIF final -->
+            <img src="images/sorpresa2.gif.gif" alt="Un regalo especial para ti" class="final-gif">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
